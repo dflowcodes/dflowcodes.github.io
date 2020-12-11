@@ -1,0 +1,9 @@
+Current list of todos for future reference in this project 
+1. Make sure Ipad/tablets access the mobile version
+2. To fix the navbar you will just have to an xs 4 with 4 divs....
+3. Inegrate repo request into the contacts page.
+
+
+Currently working on : 
+The desktop version first
+contact page
