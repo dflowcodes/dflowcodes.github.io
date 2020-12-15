@@ -1,19 +1,25 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
-import { Avatar, Toolbar, Typography, Grid } from "@material-ui/core";
+import { Toolbar, Typography, Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import CodeIcon from "@material-ui/icons/Code";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import headshot from "../components/images/headshot.jpg";
 import "fontsource-roboto";
 
 /** This page has different renders based on suspected mobile
  * or desktop users. The website is intented to be friendly to all displays
  */
-const linkStyle = { color: "white", marginRight: 15 };
 const iconStyle = {};
+const mobileLinkStyle = {
+  color: "white",
+  display: "flex",
+  justifyContent: "center",
+  flexWrap: "wrap",
+  textDecoration: "none",
+  width: "25%",
+};
 const dtopLinkStyle = {
   color: "white",
   display: "flex",
@@ -28,30 +34,42 @@ function Navigation() {
   // Mobile version of site rendered in this block
   if (window.screen.availWidth < 828) {
     page = (
-      <div>
-        <AppBar position="sticky" style={{ alignItems: "center" }}>
-          <Toolbar>
-            <Link to="/" style={linkStyle}>
-              <Avatar alt="Avatar" src={headshot} style={inline} />
-              <Typography variant="h6" style={inline}>
+      <div style={{ backgroundColor: "#44454f" }}>
+        <AppBar position="sticky" style={{}} color="transparent">
+          <Toolbar
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Link to="/" style={mobileLinkStyle}>
+              <HomeOutlinedIcon style={iconStyle} />
+              <div style={{ width: "100%", height: "0" }}></div>
+              <Typography variant="subtitle2" style={inline}>
                 Home
               </Typography>
             </Link>
-            <Link to="/about" style={linkStyle}>
+            <div style={{ width: "2%" }}></div>
+            <Link to="/about" style={mobileLinkStyle}>
               <MenuBookIcon style={iconStyle} />
-              <Typography variant="caption" style={inline}>
+              <div style={{ width: "100%", height: "0" }}></div>
+              <Typography variant="subtitle2" style={inline}>
                 Bio
               </Typography>
             </Link>
-            <Link to="/projects" style={linkStyle}>
+            <div style={{ width: "2%" }}></div>
+            <Link to="/projects" style={mobileLinkStyle}>
               <CodeIcon style={iconStyle} />
-              <Typography variant="h6" style={inline}>
+              <div style={{ width: "100%", height: "0" }}></div>
+              <Typography variant="subtitle2" style={inline}>
                 Work
               </Typography>
             </Link>
-            <Link to="contact" style={linkStyle}>
+            <div style={{ width: "2%" }}></div>
+            <Link to="contact" style={mobileLinkStyle}>
               <MailOutlineIcon style={iconStyle} />
-              <Typography variant="h6" style={inline}>
+              <div style={{ width: "100%", height: "0" }}></div>
+              <Typography variant="subtitle2" style={inline}>
                 Contact
               </Typography>
             </Link>
@@ -70,6 +88,8 @@ function Navigation() {
               spacing={10}
               style={{
                 width: "100%",
+                marginLeft: "0",
+                marginRight: "0",
               }}
             >
               <Grid item xs={4}></Grid>
