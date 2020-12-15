@@ -1,6 +1,5 @@
 import React from "react";
 import Navigation from "./Navigation";
-import moment from "moment";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Typography,
@@ -775,11 +774,10 @@ function Projects() {
                   application for IOS using swift as I have always wanted to
                   play around in Xcode. Also of note,{" "}
                   <b>many of these projects are hosted in private repos</b> for
-                  Umich honor code purposes. I can still share the code with
-                  potential employers and curious non-students as long as they
-                  agree not to distribute it further. Click below if you would
-                  like to request a projects source code and I'll get back to
-                  you.
+                  Umich honor code purposes. Some of the school related projects
+                  from older semesters I do not have access to at all anymore,
+                  but if I do have access you will be able to request a copy of
+                  the repo by pressing the button below.
                 </Typography>
                 <div style={{ width: "100%", height: "0" }} />
                 <Button
