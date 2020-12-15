@@ -239,6 +239,14 @@ class Contact extends Component {
                 Send
               </Button>
             </div>
+            <Typography
+              variant="h6"
+              color="textSecondary"
+              style={{ marginTop: "3%" }}
+            >
+              And please be sure to check out the mobile version of the site on
+              your phone or tablet
+            </Typography>
           </div>
         </div>
       </div>
