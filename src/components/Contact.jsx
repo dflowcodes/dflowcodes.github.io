@@ -7,6 +7,8 @@ import {
   Grid,
   TextField,
   Button,
+  Backdrop,
+  CircularProgress,
 } from "@material-ui/core";
 
 import Rating from "@material-ui/lab/Rating";
@@ -20,7 +22,22 @@ class Contact extends Component {
     email: "",
     message: "",
     buttonDisabled: true,
+    emailDisabled: true,
+    backDrop: false,
   };
+
+  openBackDrop() {
+    this.setState({
+      backDrop: true,
+    });
+  }
+
+  badSend() {
+    this.setState({
+      backDrop: false,
+    });
+  }
+
   render() {
     let spacer = {
       height: "0",
@@ -67,8 +84,10 @@ class Contact extends Component {
     };
 
     const handleName = (event) => {
+      let disable = event.target.value.replace(/\s+/g, "") === "";
       this.setState({
         name: event.target.value,
+        emailDisabled: disable,
       });
     };
 
@@ -86,6 +105,7 @@ class Contact extends Component {
     };
 
     const sendEmail = () => {
+      this.openBackDrop();
       var data = {
         service_id: "service_l8vuzla",
         template_id: "template_7j0vt7g",
@@ -102,21 +122,25 @@ class Contact extends Component {
         data: JSON.stringify(data),
         contentType: "application/json",
       })
-        .done(function () {
-          alert("Your mail is sent!");
+        .done(() => {
+          this.setState({
+            requestedProjects: [],
+            rating: "0",
+            name: "",
+            email: "",
+            message: "",
+            buttonDisabled: true,
+            emailDisabled: true,
+            backDrop: false,
+          });
+          alert("Thanks for your feedback, your message was sent!");
         })
-        .fail(function (error) {
+        .fail((error) => {
+          this.setState({
+            backDrop: false,
+          });
           alert("Oops... " + JSON.stringify(error));
         });
-
-      this.setState({
-        requestedProjects: [],
-        rating: "0",
-        name: "",
-        email: "",
-        message: "",
-        buttonDisabled: true,
-      });
     };
 
     if (window.screen.availWidth < 828) {
@@ -124,20 +148,21 @@ class Contact extends Component {
         <div>
           <Navigation />
           <Typography variant="h4" align="center" style={{ marginTop: "3vh" }}>
-            Want to get ahold of me?
+            Want to get in touch?
           </Typography>
           <div className={spacer}></div>
           <div
             style={{
               display: "flex",
               justifyContent: "center",
-
+              marginRight: "3%",
+              marginLeft: "3%",
               height: "80vh",
               flexWrap: "wrap",
             }}
           >
             <div>
-              <div style={{ height: "5vh", width: "100%" }}></div>
+              <div style={{ height: "5vh" }}></div>
               <Typography variant="h6" align="center">
                 Select projects to request
               </Typography>
@@ -225,6 +250,7 @@ class Contact extends Component {
                     label="Email"
                     value={this.state.email}
                     variant="outlined"
+                    disabled={this.state.emailDisabled}
                     onChange={handleEmail}
                   />
                 </Grid>
@@ -243,6 +269,7 @@ class Contact extends Component {
                   variant="outlined"
                   value={this.state.message}
                   multiline
+                  disabled={this.state.emailDisabled}
                   onChange={handleMessage}
                   style={{ marginTop: "3vh", width: "100%" }}
                 />
@@ -259,14 +286,17 @@ class Contact extends Component {
                 >
                   Send
                 </Button>
+                <Backdrop open={this.state.backDrop}>
+                  <CircularProgress color="primary" />
+                </Backdrop>
               </div>
               <Typography
-                variant="h6"
+                variant="body1"
                 color="textSecondary"
+                align="center"
                 style={{ marginTop: "3%" }}
               >
-                And please be sure to check out the mobile version of the site
-                on your phone or tablet
+                Be sure to visit on a comuter and check out the desktop version!
               </Typography>
             </div>
           </div>
@@ -277,7 +307,7 @@ class Contact extends Component {
         <div>
           <Navigation />
           <Typography variant="h4" align="center" style={{ marginTop: "3vh" }}>
-            Want to get ahold of me?
+            Want to get in touch?
           </Typography>
           <div className={spacer}></div>
           <div
@@ -362,7 +392,7 @@ class Contact extends Component {
                 >
                   <TextField
                     id="name"
-                    label="Name"
+                    label="Name (required)"
                     variant="outlined"
                     value={this.state.name}
                     onChange={handleName}
@@ -379,6 +409,7 @@ class Contact extends Component {
                     value={this.state.email}
                     variant="outlined"
                     onChange={handleEmail}
+                    disabled={this.state.emailDisabled}
                   />
                 </Grid>
               </Grid>
@@ -396,6 +427,7 @@ class Contact extends Component {
                   variant="outlined"
                   value={this.state.message}
                   multiline
+                  disabled={this.state.emailDisabled}
                   onChange={handleMessage}
                   style={{ marginTop: "3vh", width: "100%" }}
                 />
@@ -412,6 +444,9 @@ class Contact extends Component {
                 >
                   Send
                 </Button>
+                <Backdrop open={this.state.backDrop}>
+                  <CircularProgress color="primary" />
+                </Backdrop>
               </div>
               <Typography
                 variant="h6"

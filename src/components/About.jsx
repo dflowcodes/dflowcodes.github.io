@@ -55,23 +55,29 @@ function About() {
             probably wondering a little bit about me. Where to start? <br></br>{" "}
           </p>
           <p>
-            Well, I am originally from Watervliet, a Michigan small town on the
-            shores of lake Michigan. My father moved to the city of Chicago when
-            I was about ten and from there onward I was more or less a dual
-            resident. The vast differences in culture and technology between
-            small towns and large cities was very apparent to me at a young age
-            and this is where my interest in tech and software ultimately began.
-            I spent most of my high school years working at a wildly popular
-            lakeshore resturant,{" "}
+            Well, I am originally from Watervliet, a Michigan small town near
+            the shores of Lake Michigan. My father moved to the city of Chicago
+            when I was about ten, and from there onward I was more or less a
+            dual resident. The vast differences in culture and technology
+            between small towns and large cities was very apparent to me at a
+            young age, and this is where my interest in tech and software
+            ultimately began. I spent most of my high school years working at a
+            wildly popular lakeshore restaurant,{" "}
             <a style={hl} href="https://silverbeachpizza.com/">
               Silver Beach Pizza.
             </a>{" "}
-            At a smaller high school I had very little exposure to computer
-            science in the classroom, but I knew my calling was in the tech
-            field.
+            I was captain of my varsity football team as a senior, as well as a
+            member of the varisty track and basketball teams, and I am a{" "}
+            <a style={hl} href="https://michiganboysstate.org/">
+              Michigan Boys State
+            </a>{" "}
+            alumni as well. In my scarce free time, I would try my best to teach
+            myself programming in languages like python and C/C++. At a smaller
+            high school I had very little exposure to computer science in the
+            classroom, but I knew my calling was in the tech field.
           </p>
           <p>
-            In 2017, I graduted from Watervliet High School and began studying
+            In 2017, I graduated from Watervliet High School and began studying
             Electrical Engineering at the{" "}
             <a href="https://cse.engin.umich.edu/" style={hl}>
               University of Michigan
@@ -88,12 +94,11 @@ function About() {
           <p>
             As far as programming expertise goes, I have worked in or completed
             projects with the following languages/frameworks: C, C++, python,
-            java , javascript (this website was made using reactjs), html/css,
-            swift, golang, sql, and mongodb. I have worked with mapreduce
-            frameworks like hadoop, flask backends, AWS, React, and more.
-            Because I switched majors late in my sophomore year, my first
-            internship in summer 2019 was actually in a position centered around
-            electrical engineering through{" "}
+            java, javascript, html/css, swift, golang, sql, and mongodb. I have
+            worked with mapreduce frameworks like hadoop, flask backends, AWS,
+            React, and more. Because I switched majors late in my sophomore
+            year, my first internship in summer 2019 was actually in a position
+            centered around electrical engineering through{" "}
             <a style={hl} href="http://www.aep.com/">
               AEP.
             </a>{" "}
@@ -109,14 +114,14 @@ function About() {
             <a style={hl} href="https://www.factset.com/">
               FactSet.
             </a>{" "}
-            Here, I got full control over my own independant project. I created
-            a completly standalone application that helped automate a confusing
+            Here, I got full control over my own independent project. I created
+            a completely standalone application that helped automate a confusing
             task for users. Though I cannot divulge specifics as far as this
             project is concerned, I can say that I worked with both front and
             backend technologies on this project, creating a seamless UI that
             assisted internal users with everyday tasks. I enjoyed my time at
             FactSet, and apparently they did as well. As of today, I will
-            gradute with a BSE in Computer Science in May 2021, and I will be
+            graduated with a BSE in Computer Science in May 2021, and I will be
             returning to their Chicago office in July of 2021 to begin working
             as a full time developer.
           </p>
@@ -142,23 +147,29 @@ function About() {
             probably wondering a little bit about me. Where to start? <br></br>{" "}
           </p>
           <p>
-            Well, I am originally from Watervliet, a Michigan small town on the
-            shores of lake Michigan. My father moved to the city of Chicago when
-            I was about ten and from there onward I was more or less a dual
-            resident. The vast differences in culture and technology between
-            small towns and large cities was very apparent to me at a young age
-            and this is where my interest in tech and software ultimately began.
-            I spent most of my high school years working at a wildly popular
-            lakeshore resturant,{" "}
+            Well, I am originally from Watervliet, a Michigan small town near
+            the shores of Lake Michigan. My father moved to the city of Chicago
+            when I was about ten, and from there onward I was more or less a
+            dual resident. The vast differences in culture and technology
+            between small towns and large cities was very apparent to me at a
+            young age, and this is where my interest in tech and software
+            ultimately began. I spent most of my high school years working at a
+            wildly popular lakeshore restaurant,{" "}
             <a style={hl} href="https://silverbeachpizza.com/">
               Silver Beach Pizza.
             </a>{" "}
-            At a smaller high school I had very little exposure to computer
-            science in the classroom, but I knew my calling was in the tech
-            field.
+            I was captain of my varsity football team as a senior, as well as a
+            member of the varisty track and basketball teams, and I am a{" "}
+            <a style={hl} href="https://michiganboysstate.org/">
+              Michigan Boys State
+            </a>{" "}
+            alumni as well. In my scarce free time, I would try my best to teach
+            myself programming in languages like python and C/C++. At a smaller
+            high school I had very little exposure to computer science in the
+            classroom, but I knew my calling was in the tech field.
           </p>
           <p>
-            In 2017, I graduted from Watervliet High School and began studying
+            In 2017, I graduated from Watervliet High School and began studying
             Electrical Engineering at the{" "}
             <a href="https://cse.engin.umich.edu/" style={hl}>
               University of Michigan
@@ -175,12 +186,11 @@ function About() {
           <p>
             As far as programming expertise goes, I have worked in or completed
             projects with the following languages/frameworks: C, C++, python,
-            java , javascript (this website was made using reactjs), html/css,
-            swift, golang, sql, and mongodb. I have worked with mapreduce
-            frameworks like hadoop, flask backends, AWS, React, and more.
-            Because I switched majors late in my sophomore year, my first
-            internship in summer 2019 was actually in a position centered around
-            electrical engineering through{" "}
+            java, javascript, html/css, swift, golang, sql, and mongodb. I have
+            worked with mapreduce frameworks like hadoop, flask backends, AWS,
+            React, and more. Because I switched majors late in my sophomore
+            year, my first internship in summer 2019 was actually in a position
+            centered around electrical engineering through{" "}
             <a style={hl} href="http://www.aep.com/">
               AEP.
             </a>{" "}
@@ -196,14 +206,14 @@ function About() {
             <a style={hl} href="https://www.factset.com/">
               FactSet.
             </a>{" "}
-            Here, I got full control over my own independant project. I created
-            a completly standalone application that helped automate a confusing
+            Here, I got full control over my own independent project. I created
+            a completely standalone application that helped automate a confusing
             task for users. Though I cannot divulge specifics as far as this
             project is concerned, I can say that I worked with both front and
             backend technologies on this project, creating a seamless UI that
             assisted internal users with everyday tasks. I enjoyed my time at
             FactSet, and apparently they did as well. As of today, I will
-            gradute with a BSE in Computer Science in May 2021, and I will be
+            graduated with a BSE in Computer Science in May 2021, and I will be
             returning to their Chicago office in July of 2021 to begin working
             as a full time developer.
           </p>

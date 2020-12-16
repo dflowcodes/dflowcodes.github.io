@@ -35,7 +35,7 @@ function Navigation() {
   if (window.screen.availWidth < 828) {
     page = (
       <div style={{ backgroundColor: "#44454f" }}>
-        <AppBar position="sticky" style={{}} color="transparent">
+        <AppBar position="sticky" style={{ width: "100%" }} color="transparent">
           <Toolbar
             style={{
               display: "flex",
@@ -66,7 +66,7 @@ function Navigation() {
               </Typography>
             </Link>
             <div style={{ width: "2%" }}></div>
-            <Link to="contact" style={mobileLinkStyle}>
+            <Link to="/contact" style={mobileLinkStyle}>
               <MailOutlineIcon style={iconStyle} />
               <div style={{ width: "100%", height: "0" }}></div>
               <Typography variant="subtitle2" style={inline}>
@@ -118,7 +118,7 @@ function Navigation() {
                 </Link>
               </Grid>
               <Grid item xs={1}>
-                <Link to="contact" style={dtopLinkStyle}>
+                <Link to="/contact" style={dtopLinkStyle}>
                   <MailOutlineIcon style={iconStyle} />
                   <Typography variant="subtitle2" style={inline}>
                     Contact
