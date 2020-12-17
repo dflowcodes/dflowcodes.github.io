@@ -121,7 +121,7 @@ function About() {
             backend technologies on this project, creating a seamless UI that
             assisted internal users with everyday tasks. I enjoyed my time at
             FactSet, and apparently they did as well. As of today, I will
-            graduated with a BSE in Computer Science in May 2021, and I will be
+            graduate with a BSE in Computer Science in May 2021, and I will be
             returning to their Chicago office in July of 2021 to begin working
             as a full time developer.
           </p>
@@ -213,7 +213,7 @@ function About() {
             backend technologies on this project, creating a seamless UI that
             assisted internal users with everyday tasks. I enjoyed my time at
             FactSet, and apparently they did as well. As of today, I will
-            graduated with a BSE in Computer Science in May 2021, and I will be
+            graduate with a BSE in Computer Science in May 2021, and I will be
             returning to their Chicago office in July of 2021 to begin working
             as a full time developer.
           </p>

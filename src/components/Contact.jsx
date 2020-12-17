@@ -113,6 +113,7 @@ class Contact extends Component {
         template_params: {
           from_name: this.state.name,
           message: this.state.message,
+          replyEmail: this.state.email,
           rating: this.state.rating,
           requested: this.state.requestedProjects.toString(),
         },
@@ -296,7 +297,8 @@ class Contact extends Component {
                 align="center"
                 style={{ marginTop: "3%" }}
               >
-                Be sure to visit on a comuter and check out the desktop version!
+                Be sure to visit on a computer and check out the desktop
+                version!
               </Typography>
             </div>
           </div>
